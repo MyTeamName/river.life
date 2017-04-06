@@ -1,0 +1,7 @@
+{
+  "clientId" : "20473126130-80iubgseg0drr44gdpt5s9f381377q4o.apps.googleusercontent.com",
+  "serviceAccountEmail" : "20473126130-k6vmqgd3biuee5ela35ifef05uak7t5a@developer.gserviceaccount.com",
+  "serviceAccountPrivateKeyFile" : "/var/www/river.life/google/login-e1b14b8db92d.p12",
+  "widgetUrl" : "https://river.life/callback",
+  "cookieName" : "gtoken"
+}

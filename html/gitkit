@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!-- 1: Copy and paste here the Sign in page javascript you downloaded from Developer Console as gitkit-widget.html -->
+<!-- Note: For Yahoo support, you will need to replace the 'JAVASCRIPT_ESCAPED_POST_BODY' as noted above -->
+
+<script type="text/javascript" src="//www.gstatic.com/authtoolkit/js/gitkit.js"></script>
+<link type="text/css" rel="stylesheet" href="//www.gstatic.com/authtoolkit/css/gitkit.css" />
+<script type="text/javascript">
+  var config = {
+      apiKey: 'AIzaSyC-Xk9b91nITnwlvnbNOo8K5KnRh3s-bGs',
+      signInSuccessUrl: '/callback.php',
+      idps: ["googleplus"],
+      oobActionUrl: '/',
+      siteName: 'this site'
+  };
+  // The HTTP POST body should be escaped by the server to prevent XSS
+  window.google.identitytoolkit.start(
+      '#gitkitWidgetDiv', // accepts any CSS selector
+      config,
+      'JAVASCRIPT_ESCAPED_POST_BODY');
+</script>
+
+
+</head>
+<body>
+<!-- Placeholder for the sign in page -->
+<div id="gitkitWidgetDiv"></div>
+</body>
+</html>
