@@ -1,0 +1,8 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <img src="{{ comment.user.avatar_url }}" width="24px">
+        <strong><a href="{{ comment.user.html_url }}">{{ comment.user.login }}</a></strong>
+        {{ comment.created_at }}
+    </div>
+    <div class="panel-body">{{ comment.body_html }}</div>
+</div>
