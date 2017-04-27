@@ -3,3 +3,22 @@ html {
     background-size: cover;
     min-height: 100%;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+}
+
+#gh-comments-nav {
+    bottom: 0;
+    position: absolute;
+}
+
+.full-width-center {
+    width: 100%;
+    text-align: center;
+}
+
+#gh-comments-arrow {
+    font-size: xx-large;
+}

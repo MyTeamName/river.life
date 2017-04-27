@@ -6,10 +6,35 @@
         <title>River Life</title>
         <meta name="description" content="River Life">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
-        <div id="gh-comments-list"></div>
+        <div style="height:100vh"></div>
+        <div id="gh-comments-nav" class="full-width-center">
+            <svg width="50" height="50">
+                <g>
+                    <circle cx="25" cy="25" r="20"
+                        fill="#f5f5f5"
+                        stroke="#ddd"
+                        stroke-width="0.5">
+                    </circle>
+                    <text id="gh-comments-arrow" x="50%" y="50%"
+                        alignment-baseline="middle"
+                        text-anchor="middle">
+                        &#8595;
+                    </text>
+                <g>
+            </svg>
+        </div>
+        <div id="gh-comments-list" class="container"></div>
+        <div class="full-width-center" style="margin-bottom:10px">
+            <a href="https://github.com/MyTeamName/river.life/issues/1" class="btn btn-default">Add Comment</a>
+        </div>
 
         <script src="/js/google-analytics.js"></script>
         <script
