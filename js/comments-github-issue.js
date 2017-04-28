@@ -1,4 +1,4 @@
-var api_url = "https://api.github.com/repos/MyTeamName/river.life/issues/1/comments"
+var api_url = GITHUB_ISSUES_BASE_URL + "/1/comments"
 
 // thanks http://donw.io/post/github-comments/
 $(document).ready(function () {
