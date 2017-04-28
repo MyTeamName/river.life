@@ -9,14 +9,26 @@ body {
     background-color: transparent;
 }
 
-#gh-comments-nav {
+#gh-comments-mast {
     bottom: 0;
     position: absolute;
 }
 
 .full-width-center {
     width: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mdl-card {
+    margin: 5px;
+}
+
+.mdl-card--banner {
+    width:80%;
+    min-height:87px;
 }
 
 #gh-comments-arrow {
