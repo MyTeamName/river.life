@@ -24,6 +24,13 @@ body {
 
 .mdl-card {
     margin: 5px;
+    min-height: 0;
+    width: auto;
+}
+
+#gh-comments-list .mdl-card__supporting-text, #gh-comments-list .mdl-card__supporting-text * {
+    font-size: 2rem;
+    line-height: 100%;
 }
 
 .mdl-card--banner {

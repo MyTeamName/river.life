@@ -14,7 +14,7 @@
     <body>
         <div style="height:100vh"></div>
 
-        <div class="full-width-center">
+        <div id="gh-comments" class="full-width-center">
             <div id="gh-comments-mast" class="mdl-card mdl-shadow--2dp mdl-card--banner">
                 <div class="mdl-card__title">
                     <h2 class="mdl-card__title-text">What is river life?</h2>
@@ -27,19 +27,16 @@
                 </div>
             </div>
 
-            <div id="gh-comments-list"></div>
-            <div class="mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Welcome</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris sagittis pellentesque lacus eleifend lacinia...
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    Get Started
-                    </a>
+            <div id="gh-comments-list">
+                <div v-for="comment in comments" class="mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <span class="mdl-card__title-text mdl-chip mdl-chip--contact">
+                            <img class="mdl-chip__contact" :src="comment.user.avatar_url"></img>
+                            <span class="mdl-chip__text">{{ comment.user.login }}</span>
+                        </span>
+                    </div>
+
+                    <div v-html="comment.body_html" class="mdl-card__supporting-text"></div>
                 </div>
             </div>
 
@@ -58,6 +55,7 @@
         </div>
 
         <script src="/env.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js"></script>
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
